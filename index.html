@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Rakesh Kumar Karn Jyotish — Vedic Astrology, KP Astrology, Lal Kitab, Vaastu and personalised consultations.">
+<title>Karn Vastu Aura | Dr. Rakesh Kumar Karn </title>
+<style>
+:root{
+  --navy:#071a3a;
+  --blue:#123b78;
+  --deep:#061329;
+  --gold:#d6a83d;
+  --gold2:#f2d37a;
+  --cream:#fffaf0;
+  --white:#ffffff;
+  --muted:#b8c4d8;
+  --card:rgba(255,255,255,.07);
+  --line:rgba(255,255,255,.13);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Georgia,"Times New Roman",serif;
+  color:#17233a;
+  background:var(--cream);
+  line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+.container{width:min(1140px,92%);margin:auto}
+header{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  background:rgba(6,19,41,.92);backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(242,211,122,.18)
+}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;color:white}
+.brand-mark{
+  width:46px;height:46px;border:1px solid var(--gold2);border-radius:50%;
+  display:grid;place-items:center;color:var(--gold2);font-size:23px;
+}
+.brand strong{font-size:18px;letter-spacing:.4px}
+.brand small{display:block;color:#d9dfeb;font-family:Arial,sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase}
+nav{display:flex;gap:25px;color:#eef2f8;font-family:Arial,sans-serif;font-size:14px}
+nav a:hover{color:var(--gold2)}
+.menu{display:none;background:none;border:0;color:white;font-size:28px}
+
+.hero{
+  min-height:100vh;padding-top:76px;display:flex;align-items:center;
+  color:white;position:relative;overflow:hidden;
+  background:
+   radial-gradient(circle at 78% 30%,rgba(214,168,61,.18),transparent 25%),
+   radial-gradient(circle at 20% 75%,rgba(36,91,170,.24),transparent 30%),
+   linear-gradient(135deg,#061329 0%,#0a2147 55%,#071a3a 100%);
+}
+.stars{position:absolute;inset:0;opacity:.55;background-image:
+ radial-gradient(2px 2px at 10% 20%,#fff,transparent),
+ radial-gradient(1px 1px at 23% 40%,#fff,transparent),
+ radial-gradient(2px 2px at 41% 17%,#fff,transparent),
+ radial-gradient(1px 1px at 58% 31%,#fff,transparent),
+ radial-gradient(2px 2px at 75% 13%,#fff,transparent),
+ radial-gradient(1px 1px at 87% 47%,#fff,transparent),
+ radial-gradient(2px 2px at 67% 73%,#fff,transparent),
+ radial-gradient(1px 1px at 34% 82%,#fff,transparent),
+ radial-gradient(2px 2px at 91% 85%,#fff,transparent)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;position:relative}
+.kicker{color:var(--gold2);font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:4px;font-size:12px;margin-bottom:18px}
+h1{font-size:clamp(44px,6vw,78px);line-height:1.03;font-weight:500;margin-bottom:20px}
+h1 span{color:var(--gold2)}
+.hero p{font-family:Arial,sans-serif;color:#d4ddec;max-width:650px;font-size:17px}
+.buttons{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.btn{padding:13px 22px;border-radius:30px;font-family:Arial,sans-serif;font-weight:700;font-size:14px;transition:.25s}
+.btn-gold{background:var(--gold);color:#101b30}
+.btn-gold:hover{background:var(--gold2);transform:translateY(-2px)}
+.btn-outline{border:1px solid rgba(242,211,122,.65);color:white}
+.btn-outline:hover{background:rgba(242,211,122,.1)}
+.chart{
+  width:min(430px,90vw);aspect-ratio:1;border-radius:50%;margin:auto;
+  border:1px solid rgba(242,211,122,.5);position:relative;
+  background:
+   repeating-conic-gradient(from 0deg,rgba(242,211,122,.12) 0deg 1deg,transparent 1deg 30deg),
+   radial-gradient(circle,#102f60 0 38%,transparent 38.5%),
+   radial-gradient(circle at center,#0b244b,#061329);
+  box-shadow:0 0 80px rgba(214,168,61,.12),inset 0 0 40px rgba(0,0,0,.3);
+}
+.chart:before,.chart:after{content:"";position:absolute;inset:13%;border:1px solid rgba(242,211,122,.4);transform:rotate(45deg)}
+.chart:after{transform:rotate(-45deg)}
+.chart-center{position:absolute;inset:38%;display:grid;place-items:center;border:1px solid var(--gold);border-radius:50%;color:var(--gold2);font-size:35px}
+.zodiac{position:absolute;inset:0;display:grid;place-items:center;font-size:20px;color:#f6df9b}
+.zodiac b{position:absolute;font-size:17px}
+.z1{top:5%;left:48%}.z2{top:17%;right:17%}.z3{right:5%;top:48%}.z4{right:17%;bottom:17%}
+.z5{bottom:5%;left:48%}.z6{bottom:17%;left:17%}.z7{left:5%;top:48%}.z8{top:17%;left:17%}
+
+section{padding:90px 0}
+.section-head{text-align:center;max-width:720px;margin:0 auto 45px}
+.eyebrow{color:#a17a1e;font-family:Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase}
+h2{font-size:42px;color:var(--deep);font-weight:500;margin:10px 0}
+.section-head p{color:#657086;font-family:Arial,sans-serif}
+.services{background:#fff}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{
+  padding:28px 22px;border:1px solid #eadfca;background:#fffdf8;border-radius:18px;
+  transition:.25s;box-shadow:0 8px 30px rgba(19,34,61,.05)
+}
+.card:hover{transform:translateY(-6px);box-shadow:0 15px 35px rgba(19,34,61,.1)}
+.icon{font-size:30px;color:#b58622;margin-bottom:15px}
+.card h3{font-size:20px;color:var(--deep);margin-bottom:8px}
+.card p{font-family:Arial,sans-serif;color:#687387;font-size:14px}
+
+.about{background:linear-gradient(180deg,#fffaf0,#f7f0df)}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
+.about-box{
+  min-height:380px;border-radius:24px;padding:35px;color:white;
+  background:linear-gradient(145deg,#071a3a,#153c78);
+  display:flex;flex-direction:column;justify-content:end;
+  box-shadow:0 20px 50px rgba(6,19,41,.2)
+}
+.about-box .symbol{font-size:72px;color:var(--gold2);margin-bottom:auto}
+.about-box h3{font-size:29px;font-weight:500}
+.about-box p{font-family:Arial,sans-serif;color:#d9e1ef}
+.about-text p{font-family:Arial,sans-serif;color:#5e6a7d;margin:15px 0}
+.points{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:25px}
+.point{padding:12px 15px;border-left:3px solid var(--gold);background:white;font-family:Arial,sans-serif;font-size:13px}
+
+.process{background:#071a3a;color:white}
+.process h2{color:white}.process .section-head p{color:#bcc8db}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.step{padding:28px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.045)}
+.num{font-family:Arial,sans-serif;color:var(--gold2);font-size:13px;letter-spacing:2px}
+.step h3{font-size:22px;margin:12px 0 7px}.step p{font-family:Arial,sans-serif;color:#b9c4d7;font-size:14px}
+
+.cta{background:#fff;text-align:center}
+.contact{
+  background:linear-gradient(135deg,#fffaf0,#f4ead1);
+  border:1px solid #e5d6b6;border-radius:28px;padding:55px 30px
+}
+.contact h2{margin-top:6px}
+.contact p{font-family:Arial,sans-serif;color:#69758a;max-width:600px;margin:0 auto 25px}
+.contact-details{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;font-family:Arial,sans-serif;font-size:14px;color:#253451;margin-top:20px}
+footer{background:#040f22;color:#aeb9ca;padding:30px 0;font-family:Arial,sans-serif;font-size:12px}
+.footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.footer strong{color:#f0d58b}
+@media(max-width:900px){
+ .hero-grid,.about-grid{grid-template-columns:1fr}
+ .hero{padding:120px 0 70px}.chart{max-width:330px}
+ .cards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}
+ nav{display:none}.menu{display:block}
+ nav.open{display:flex;position:absolute;top:76px;left:0;right:0;padding:20px;background:#071a3a;flex-direction:column;gap:15px}
+}
+@media(max-width:560px){
+ h2{font-size:34px}.cards{grid-template-columns:1fr}
+ .points{grid-template-columns:1fr}.brand strong{font-size:15px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="#home" class="brand">
+      <div class="brand-mark">ॐ</div>
+      <div><strong>Karn Vastu Aura</strong><small>Dr. Rakesh kumar karn</small><small>Jyotish • Astrology • Vaastu</small></div>
+    </a>
+    <button class="menu" aria-label="Menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+    <nav>
+      <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a>
+      <a href="#process">Consultation</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="stars"></div>
+  <div class="container hero-grid">
+    <div>
+      <div class="kicker">Vedic Guidance • Personalised Insight</div>
+      <h1>Understand your <span>stars.</span><br>Navigate your path.</h1>
+      <p>Personalised Jyotish consultations combining traditional Vedic astrology with practical guidance for important life decisions, relationships, career, education and home.</p>
+      <div class="buttons">
+        <a class="btn btn-gold" href="https://powerfultools.in/consultants/dr-rakesh-kumar-karn">Book a Consultation</a>
+        <a class="btn btn-outline" href="#service">Explore Services</a>
+
+      </div>
+    </div>
+    <div class="chart" aria-label="Decorative astrology chart">
+      <div class="zodiac"><b class="z1">♈</b><b class="z2">♉</b><b class="z3">♊</b><b class="z4">♋</b><b class="z5">♌</b><b class="z6">♍</b><b class="z7">♎</b><b class="z8">♏</b></div>
+      <div class="chart-center">ॐ</div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">What I Offer</div><h2>Astrology Services</h2>
+      <p>Traditional astrological systems presented in a clear, personalised and practical way.</p>
+    </div>
+    <div class="cards">
+      <article class="card"><div class="icon">☉</div><h3>Vedic Astrology</h3><p>Birth-chart analysis, planetary influences, life themes, timing and personalised guidance.</p></article>
+      <article class="card"><div class="icon">✦</div><h3>KP Astrology</h3><p>Focused analysis using Krishnamurti Paddhati principles for specific questions and timing.</p></article>
+      <article class="card"><div class="icon">◈</div><h3>Lal Kitab</h3><p>Traditional Lal Kitab-based interpretation and practical remedial guidance.</p></article>
+      <article class="card"><div class="icon">⌂</div><h3>Vaastu</h3><p>Practical Vaastu guidance for homes, offices and spaces, with attention to layout and energy flow.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+ <div class="container about-grid">
+  <div class="about-box">
+    <div class="symbol">☼</div>
+    <h3>Rakesh Kumar Karn</h3>
+    <p>Jyotish • Vedic Astrology • KP • Lal Kitab • Vaastu</p>
+  </div>
+  <div class="about-text">
+    <div class="eyebrow">About the Practice</div><h2>Ancient wisdom, thoughtfully interpreted.</h2>
+    <p>Astrology can be a useful framework for reflection, planning and understanding patterns. Every consultation is approached with attention to the individual chart and the specific question being asked.</p>
+    <p>The focus is on clear explanations, practical observations and respectful guidance rather than one-size-fits-all predictions.</p>
+    <div class="points">
+      <div class="point">Personalised birth-chart analysis</div>
+      <div class="point">Career & professional guidance</div>
+      <div class="point">Education & child guidance</div>
+      <div class="point">Marriage & relationship questions</div>
+      <div class="point">Property & home-related questions</div>
+      <div class="point">Vaastu & remedial guidance</div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<section class="process" id="process">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">The Consultation</div><h2>Simple. Personal. Focused.</h2>
+   <p>A structured consultation designed around your question and available birth details.</p>
+  </div>
+  <div class="steps">
+   <div class="step"><div class="num">01 — SHARE</div><h3>Your Details</h3><p>Provide your birth date, birth time, birthplace and the key question you want to explore.</p></div>
+   <div class="step"><div class="num">02 — ANALYSE</div><h3>Chart Study</h3><p>The relevant astrological factors are studied according to the chosen consultation method.</p></div>
+   <div class="step"><div class="num">03 — GUIDANCE</div><h3>Understand & Plan</h3><p>Receive a clear explanation of the findings, timing considerations and practical guidance.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="cta" id="contact">
+ <div class="container">
+  <div class="contact">
+   <div class="eyebrow">Start a Conversation</div>
+   <h2>Book Your Consultation</h2>
+   <p>Tell us what you would like to understand. Consultation details and available appointment options can be shared with you directly.</p>
+   <div class="buttons" style="justify-content:center">
+     <a class="btn btn-gold" href="mailto:karnvaastuaura@gmail.com">Email for Consultation</a>
+     <a class="btn" style="background:#071a3a;color:white" href="https://wa.me/919871808913" target="_blank">WhatsApp</a>
+   </div>
+   <div class="contact-details">
+     <span>✉ karnvaastuaura@gmail.com</span><span>☎ +91-9871808913</span><span>⌂ India</span>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container footer">
+  <div>© 2026 <strong>Rakesh Kumar Karn</strong>. All rights reserved.</div>
+  <div>Jyotish • Astrology • Vaastu</div>
+ </div>
+</footer>
+
+<script>
+document.querySelectorAll('nav a').forEach(a=>{
+  a.addEventListener('click',()=>document.querySelector('nav').classList.remove('open'));
+});
+</script>
+</body>
+</html>
+
+
